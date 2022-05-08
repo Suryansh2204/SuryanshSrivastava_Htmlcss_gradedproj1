@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="labTestForm.css">
+</head>
+
+<body>
+    <div class= "lab-test">
+        <div class="form-card">
+            <form class="lab-form" action="#">
+                <h2>1.Your Contact Details</h2>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="text" name="patientId" placeholder="Patient Id if exists">
+                <input type="tel" name="contact" placeholder="Contact Number" required>
+                <input type="email" name="email" placeholder="Email Id" required>
+
+                <h2>2.Address</h2>
+                <input type="text" name="houseNum" placeholder="House Number">
+                <input type="text" name="street" placeholder="Street" required>
+                <input type="text" name="Area" placeholder="Area" required>
+
+                <div class="district-sec">
+                    <label class="district-heading" for="district">District:</label>
+                    <select id="district" name="district">
+                        <option value="Choose">Choose</option>
+                        <option value="District-A">District-A</option>
+                        <option value="District-B">District-B</option>
+                        <option value="District-C">District-C</option>
+                        <option value="District-D">District-D</option>
+                        <option value="District-E">District-E</option>
+                        <option value="District-F">District-F</option>
+                        <option value="District-G">District-G</option>
+                        <option value="District-H">District-H</option>
+                        <option value="District-I">District-I</option>
+                        <option value="District-J">District-J</option>
+                        <option value="District-K">District-K</option>
+                    </select>
+                </div>
+
+
+                <div class="tests">
+                    <h2>3.Type of Test</h2>
+
+                    <label> <input type="checkbox" id="test1" name="test1" value="CBC"> CBC</label>
+
+                    <label> <input type="checkbox" id="test2" name="test2" value="CompleteUrine"> Complete Urine</label>
+
+                    <label> <input type="checkbox" id="test3" name="test3" value="LipidProfile"> Lipid Profile</label>
+
+                    <label> <input type="checkbox" id="test4" name="test4" value="TSH"> Thyroid Stimulating
+                        Hormone(TSH)</label>
+
+                    <label><input type="checkbox" id="test5" name="test5" value="GlucoseTest"> Glucose Test</label>
+
+                </div>
+                <div class="last-sec">
+                    <h2>4.Do you want a hard Copy of the report also?</h2>
+                    <label><input type="radio" name="choice">Yes</label>
+                    <label><input type="radio" name="choice">No</label>
+
+                    <h2>5.Select Your Comfortable Date and Time</h2>
+                    <input type="date" name="date" id="date">
+                    <input type="time" name="time" id="time">
+
+                </div>
+            </form>
+            <img src="Images/Lab-Test/lab-test.jpg" alt="">
+
+
+        </div>
+
+        
+        <div class ="buttons"> 
+            <button class ="button">Reset</button>    
+            <button class ="button">Submit</button>    
+        </div>
+    </div>
+</body>
+
+</html>

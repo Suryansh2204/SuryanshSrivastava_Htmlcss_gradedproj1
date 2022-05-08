@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+    
+    background-color:#4F4F4F;
+    height: 80px;
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+    color: #FDFDFD;
+    font-family: Arial;
+    font-size: 1.3cm;
+    font-weight: 150;
+}
+
+.footer{
+    background-color: #000000;
+    color: #F5F5F5;
+    position:relative;
+    left:0;
+    bottom:0;
+    text-align: center;
+    width:99.35%;
+    padding: 5px;
+    margin-left: 0;
+  }
+
+.navbar {
+    position: static;
+    overflow: hidden;
+    background-color: #7E7E7E;
+    font-family: Arial;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #272727;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    float: none;
+    color: #1E9EE8;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* ------------- */
+
+.carousel{
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: steelblue;
+}
+
+
+/* -------------- */
+.covid-care-main{
+
+    display : flex;
+    flex-direction: column;
+}  
+
+
+.card-section {
+    display : flex;
+    justify-content: space-evenly;
+    
+}
+
+.card {
+    
+    background-color: #F1F2FD;
+    height :270px;
+    width : 250px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding : 0px 10px 0px 10px;
+    margin : 10px 20px 10px 20px;
+    
+    }
+
+
+.card-text{
+    color:#399CD7; 
+   margin: 0;
+}
+
+.card-img {
+    width : 100%;
+    height : 120px
+}
+
+.cart-button {
+
+    height : 30px;
+    width : 100%;
+    font-size : 20px;
+    font-weight : bold;
+    background-color: #E6E6F6;    
+    color :orange;
+    border-radius: 7px;
+    border : 3px solid #938CB6;
+    margin-left: 3px;
+
+
+
+    
+}
+
+.card button:active{
+
+    background-color:  rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+  }
+
+
+.card img:hover {
+  width : 102%;
+  height : 125px
+
+}
+
+
+.carousel {
+  margin: auto;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  animation: slide-animation 15s infinite alternate;
+}
+
+.carousel-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.carousel-image {
+  width: 800px;
+  height: 400px;
+  object-fit: fill;
+}
+
+@keyframes slide-animation {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: -800px;
+  }
+
+  50% {
+    left: -1600px;
+  }
+
+  75% {
+    left: -2400px;
+  }
+
+  100% {
+    left: -3200px;
+  }
+}
